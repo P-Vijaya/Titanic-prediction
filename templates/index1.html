@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center"> Titanic dataset </h1>
+
+    <div class="form">
+        <form action="/" method="POST">
+            <textarea class="number" name="Pclass" id="Pclass" rows=1 placeholder="Passenger class(1,2,3)"></textarea>
+            <textarea class="number" name="Sex" id="Sex" rows=1 placeholder="1(Male)/0(Female)"></textarea>
+            <textarea class="number" name="Age" id="Age" rows=1 placeholder="Age"></textarea>
+            <textarea class="number" name="SibSp" id="SibSp" rows=1 placeholder="no.of sibling aboard"></textarea>
+            <textarea class="number" name="Parch" id="Parch" rows=1 placeholder="no.of parents\children aboard"></textarea>
+            <textarea class="number" name="Fare" id="Fare" rows=1 placeholder="Fare"></textarea>
+
+            <button type="submit" class="btn btn-primary mb-2">Predict</button></br>
+                        </br>
+        </form>
+    </div>
+</div>
+{% endblock %}
