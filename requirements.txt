@@ -31,3 +31,4 @@ typing_extensions==4.1.1
 Werkzeug==2.1.1
 wincertstore==0.2
 zipp==3.8.0
+gunicorn
